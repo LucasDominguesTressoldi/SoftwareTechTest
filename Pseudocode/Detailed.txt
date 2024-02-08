@@ -1,0 +1,57 @@
+funcao prepararPedido(tipoBebida)
+    materialCopo = escolherMaterialCopo(tipoBebida)
+    sabor = receba("Qual sabor você deseja " + obterSabores(tipoBebida) + "?")
+    tamanho = receba("Qual tamanho você deseja " + obterTamanhos(tipoBebida) + "?")
+    
+    gelo = escolherGelo(tipoBebida)
+    furoNaTampa = paraViagem()
+
+    retorne "Pedido de $tipoBebida:
+            Sabor: $sabor | Tamanho: $tamanho
+            Qtd Gelos: $gelo | Furo na Tampa: $furoNaTampa
+            Pronto!"
+
+funcao escolherMaterialCopo(tipoBebida)
+    se tipoBebida == "suco" entao
+        retorne "plástico"
+    senao
+        retorne "papel"
+    fim se
+
+funcao obterSabores(tipoBebida)
+    se tipoBebida == "suco" entao
+        retorne "Uva ou Laranja"
+    senao
+        retorne "Coca ou Guaraná"
+    fim se
+
+funcao obterTamanhos(tipoBebida)
+    se tipoBebida == "suco" entao
+        retorne "300ml ou 500ml"
+    senao
+        retorne "300ml, 500ml ou 700ml"
+    fim se
+
+funcao escolherGelo(tipoBebida)
+    gelo = receba("Gostaria de gelo?")
+
+    se gelo == "sim" entao
+        se tipoBebida == "suco" entao
+            retorne 12
+        senao
+            retorne 6
+        fim se
+    fim se
+
+    retorne 0
+
+funcao paraViagem()
+    paraViagem = receba("É para viagem?")
+
+    se paraViagem == "sim" entao
+        retorne "não"
+    senao
+        retorne "sim"
+    fim se
+
+Imprimir(prepararPedido("suco"))

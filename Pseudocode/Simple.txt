@@ -1,0 +1,22 @@
+INÍCIO
+1. Escolhe tipo de bebida
+2. Se bebida for igual a suco
+	a. Sabores são uva e laranja
+	b. Tamanhos são 300ml e 500ml
+	c. Material do copo é de plástico
+3. Senão
+	a. Sabores são coca e guaraná
+	b. Tamanhos são 300ml, 500ml e 700ml
+	c. Material do copo é de papel
+4. Escolhe sabor, tamanho e se é com ou sem gelo
+5. Se com gelo for escolhido
+	a. Se bebida for igual a suco
+		i. Adicione 6 pedras de gelo
+		ii. Vá para o passo 6.
+	b. Adicione 12 pedras de gelo
+6. Escolhe se é para viagem ou não
+7. Se for para viagem
+	a. Tampa do copo é sem furo
+8. Senão
+	a. Tampa do copo é com furo
+FIM
