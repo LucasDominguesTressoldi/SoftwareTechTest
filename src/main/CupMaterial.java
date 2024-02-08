@@ -1,3 +1,5 @@
+package main;
+
 public class CupMaterial {
     public String chooseCupMaterial(String drinkType) {
         if (drinkType.equals("Suco")) {
