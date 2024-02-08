@@ -2,7 +2,6 @@ public class Order {
     private final String drinkType;
     private String flavor;
     private int size;
-    private String cupMaterial;
     private Boolean withIce;
     private int ice;
     private Boolean cupLidWithHole;
@@ -12,6 +11,8 @@ public class Order {
     }
 
     public void prepareOrder() {
-        System.out.println("Pedido de " + drinkType);
+
+        String cupMaterial = new CupMaterial().chooseCupMaterial(drinkType);
+        System.out.println("Pedido de " + drinkType + "\n" + "Material do copo: " + cupMaterial);
     }
 }
