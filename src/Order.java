@@ -1,6 +1,5 @@
 public class Order {
     private final String drinkType;
-    private String flavor;
     private int size;
     private Boolean withIce;
     private int ice;
@@ -13,6 +12,8 @@ public class Order {
     public void prepareOrder() {
 
         String cupMaterial = new CupMaterial().chooseCupMaterial(drinkType);
-        System.out.println("Pedido de " + drinkType + "\n" + "Material do copo: " + cupMaterial);
+        String flavor = new Flavor().chooseFlavor(drinkType);
+        System.out.println("Pedido de " + drinkType + "\n" + "Material do copo: " + cupMaterial + "\n" +
+                "Sabor: " + flavor);
     }
 }
