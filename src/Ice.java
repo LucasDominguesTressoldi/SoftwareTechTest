@@ -6,8 +6,12 @@ public class Ice {
         System.out.print("[1] Sim | [2] Não\nGostaria de gelo? ");
         int withIce = scanner.nextInt();
 
+        if (withIce != 1 && withIce != 2) {
+            throw new IllegalArgumentException("Entrada inválida.");
+        }
+
         if (withIce == 1) {
-            if (drinkType.equals("suco")) {
+            if (drinkType.equals("Suco")) {
                 return 12;
             } else {
                 return 6;

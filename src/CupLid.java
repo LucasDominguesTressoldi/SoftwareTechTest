@@ -6,6 +6,10 @@ public class CupLid {
         System.out.print("[1] Sim | [2] Não\nGostaria de levar para viagem? ");
         int takeOut = scanner.nextInt();
 
+        if (takeOut != 1 && takeOut != 2) {
+            throw new IllegalArgumentException("Entrada inválida.");
+        }
+
         if (takeOut == 1) {
             return "Não";
         } else {
