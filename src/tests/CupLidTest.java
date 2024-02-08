@@ -5,7 +5,6 @@ import java.io.InputStream;
 import org.junit.jupiter.api.Test;
 import java.io.ByteArrayInputStream;
 import java.util.InputMismatchException;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -17,8 +16,7 @@ public class CupLidTest {
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
 
-        CupLid cupLid = new CupLid();
-        String result = cupLid.takeOut();
+        String result = CupLid.takeOut();
 
         System.setIn(System.in);
 
@@ -31,8 +29,7 @@ public class CupLidTest {
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
 
-        CupLid cupLid = new CupLid();
-        String result = cupLid.takeOut();
+        String result = CupLid.takeOut();
 
         System.setIn(System.in);
 
@@ -45,9 +42,7 @@ public class CupLidTest {
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
 
-        CupLid cupLid = new CupLid();
-
-        assertThrows(InputMismatchException.class, cupLid::takeOut);
+        assertThrows(InputMismatchException.class, CupLid::takeOut);
 
         System.setIn(System.in);
     }
@@ -58,9 +53,7 @@ public class CupLidTest {
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
 
-        CupLid cupLid = new CupLid();
-
-        assertThrows(IllegalArgumentException.class, cupLid::takeOut);
+        assertThrows(IllegalArgumentException.class, CupLid::takeOut);
 
         System.setIn(System.in);
     }

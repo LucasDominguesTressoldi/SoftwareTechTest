@@ -9,11 +9,11 @@ public class Order {
 
     public void prepareOrder() {
 
-        String cupMaterial = new CupMaterial().chooseCupMaterial(drinkType);
-        String flavor = new Flavor().chooseFlavor(drinkType);
-        String size = new Size().chooseSize(drinkType);
-        int iceCubes = new Ice().chooseIce(drinkType);
-        String cupLidWithHole = new CupLid().takeOut();
+        String cupMaterial = CupMaterial.chooseCupMaterial(drinkType);
+        String flavor = Flavor.chooseFlavor(drinkType);
+        String size = Size.chooseSize(drinkType);
+        int iceCubes = Ice.chooseIce(drinkType);
+        String cupLidWithHole = CupLid.takeOut();
 
         System.out.println("-".repeat(26));
         System.out.println("Pedido de " + drinkType + "\n" + "Material do copo: " + cupMaterial + "\n" +

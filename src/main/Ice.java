@@ -3,7 +3,7 @@ package main;
 import java.util.Scanner;
 
 public class Ice {
-    public int chooseIce(String drinkType) {
+    public static int chooseIce(String drinkType) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("[1] Sim | [2] Não\nGostaria de gelo? ");
         int withIce = scanner.nextInt();

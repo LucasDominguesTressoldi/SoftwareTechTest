@@ -3,7 +3,7 @@ package main;
 import java.util.Scanner;
 
 public class Flavor {
-    public String chooseFlavor(String drinkType) {
+    public static String chooseFlavor(String drinkType) {
         Scanner scanner = new Scanner(System.in);
         if (drinkType.equals("Suco")) {
             System.out.print("Uva ou Laranja? ");

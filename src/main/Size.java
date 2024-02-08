@@ -3,7 +3,7 @@ package main;
 import java.util.Scanner;
 
 public class Size {
-    public String chooseSize(String drinkType) {
+    public static String chooseSize(String drinkType) {
         Scanner scanner = new Scanner(System.in);
         if (drinkType.equals("Suco")) {
             System.out.print("300ml ou 500ml? ");

@@ -1,7 +1,7 @@
 package main;
 
 public class CupMaterial {
-    public String chooseCupMaterial(String drinkType) {
+    public static String chooseCupMaterial(String drinkType) {
         if (drinkType.equals("Suco")) {
             return "Plástico";
         } else {
