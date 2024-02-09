@@ -1,0 +1,40 @@
+Functional requirements
+-----------------------
+
+RF1. Choose between different types of drinks
+1. Juice | 2. Soda
+
+RF2. Choose between different types of flavors (based on the type of drink)
+1. Grape or Orange (Juice) | 2. Coca or Guarana (Soda)
+
+RF3. Assign the right type of glass to each drink
+1. Paper Cup for Soda | 2. Plastic juice cup
+
+RF4. Choose the amount of ice
+1. Soft drinks receive 6 ice cubes | 2. Juices receive 12 ice cubes
+3. There is the option to serve without ice
+
+RF5. Choose drink size
+1. Soft drinks: 300ml, 500ml, 700ml | 2. Juices: 300ml, 500ml
+
+RF6. Choose the type of order
+1. "Take Out" for delivery: Receive a lid without a hole
+2. "Eat In" for on-site consumption: Receives a lid with a hole for the straw
+
+Non-Functional Requirements
+---------------------------
+
+RNF1. Efficiency
+The equipment must aim for a minimum waiting time, that is, to process and deliver orders in the most efficient way possible.
+
+RNF2. Maintainability
+The equipment system must be easy to maintain and update. This way, the inclusion of new drink flavors, cup sizes, or any other improvements and modifications does not affect the equipment's performance.
+
+RNF3. Usability
+The equipment must aim for usability. Its interface must be easy to interact with and anyone can complete your order without any problems.
+
+RNF4. Hygiene
+The equipment must be cleaned and maintained throughout its operating time. Always aiming for safety and hygiene for customers.
+
+RNF5. Access control
+Access to the system must be restricted and exclusive to company employees.
